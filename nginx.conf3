@@ -2,9 +2,9 @@ server
     {
         listen 80;
         #listen [::]:80;
-        server_name www.tp-shop.cn;
+        server_name cake.net;
         index index.html index.htm index.php default.html default.htm default.php;
-        root  /home/wwwroot/www.tp-shop.cn;
+        root  /home/wwwroot/cake.net/cake;
 
         location / {
             index  index.html index.htm index.php;
@@ -23,13 +23,13 @@ server
 		
 	location ~.*\.(jpg|png|jpeg)$
       	{
-	    root  /home/wwwroot/www.tp-shop.cn;
+	    root  /home/wwwroot/cake.net/cake;
        	    #expires 30d;
         }
 
      # js css缓存一小时
        location ~.*\.(js|css)$ {
-           root  /home/wwwroot/www.tp-shop.cn;
+           root  /home/wwwroot/cake.net/cake;
            #expires 1h;
        }
         include other.conf;
